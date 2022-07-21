@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/041/048/original/pexels-felix-mittermeier-956981.jpg?1658308926");
+        max-width: 100%;
+        margin: 0 auto;
+        font-family: 'Courier New', Courier, monospace;
+        
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      h1 {
+        color: #acdcee;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        backdrop-filter: blur(5px);
+      }
+      .astronaut {
+        width: 800px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 30px;
+      }
+      .space-text {
+        color: white;
+        backdrop-filter: blur(5px);
+        font-weight: bold;
+      }
+      .learn-more {
+        color: #acdcee;
+        cursor: pointer;
+        text-decoration-color: #acdcee;
+        display: block;
+        backdrop-filter: blur(5px);
+      }
+      button {
+        display: block;
+        margin: 40px auto;
+        background-color: #acdcee;
+        color: #00204a;
+        padding: 25px;
+        font-size: 20px;
+        font-weight: bold;
+        border: 1px solid #00204a;
+        border-radius: 45px;
+        font-family: 'Courier New', Courier, monospace;
+        cursor: pointer;
+      }
+      .footer {
+        display: block;
+        text-align: center;
+        color: white;
+        backdrop-filter: blur(5px);
+        font-weight: bold;
+      }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>"Space, it says, is big.
+    <br/>
+    Really big.
+    <br/>
+    You just won't believe how
+    <br/>
+     vastly, hugely, mindbogglingly big it is"
+  </h1>
+  <img class="astronaut" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/041/057/original/pexels-pixabay-2156.jpg?1658325166">
+  <p class="space-text">Space is the boundless three-dimensional extent in which objects and events have relative position and direction.[1] In classical physics, physical space is often conceived in three linear dimensions, although modern physicists usually consider it, with time, to be part of a boundless four-dimensional continuum known as spacetime. The concept of space is considered to be of fundamental importance to an understanding of the physical universe. However, disagreement continues between philosophers over whether it is itself an entity, a relationship between entities, or part of a conceptual framework.</p>
+  <a class="learn-more" href="https://en.wikipedia.org/wiki/Space">Learn More On Wikipedia!</a>
+  <button>Travel To Space</button>
+  <p class="footer">👩🏻‍💻Coded by Elham Mohaammadi👩🏻‍💻</p>
+</div>
+<script>
+  function information(){
+    let name = prompt("what is your name?");
+    let time = prompt("when do you want to travel to space?");
+    let button = document.querySelector("button");
+    alert("Thanks Dear" + " " + name +" "+"you will be sent to space" + " " + time);
+  }
+  let informationButton = document.querySelector("button");
+  informationButton.addEventListener("click", information);
+</script>
+</body>
+</html>
